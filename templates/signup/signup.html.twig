@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{% if username and email %}
+<p >username: {{ username }}</p>
+<p >Email: {{ email }}</p>
+{{ "i like this and that"|replace({"this":"dk","that":"dkk"})}}
+{% endif %}
+<div class=" col-sm-6">
+ <div class="form-group">
+<form action='' method='get'>
+         <label for="username">username</label>
+         <input type="text" name="username" value="" class="form-control" required>
+       </div>
+         <div class="form-group">
+
+         <label for="password">password</label>
+         <input type="password" name="password" value="" class="form-control" required>
+       </div>
+       
+         <div class="form-group">
+
+         <label for="email">email</label>
+         <input type="email" name="email" value="" class="form-control" required>
+       </div>
+
+     <div class="form-group">
+       <input type="submit" name="submit" value="submit" class="btn btn-primary">
+
+     </div>
+       </form>
+       </div>
+{% endblock %}

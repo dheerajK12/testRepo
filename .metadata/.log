@@ -1,0 +1,28 @@
+!SESSION 2019-11-22 14:46:14.333 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_222
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.jface 2 0 2019-11-22 14:48:18.233
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-11-22 14:48:18.233
+!MESSAGE A conflict occurred for ALT+CTRL+S:
+Binding(ALT+CTRL+S,
+	ParameterizedCommand(Command(org.eclipse.php.ui.edit.text.source.quickMenu,Show Source Quick Menu,
+		Shows the source quick menu,
+		Category(org.eclipse.php.ui.category.source,Source,PHP Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@619944a7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.dltk.ui.context.views,,,system)
+Binding(ALT+CTRL+S,
+	ParameterizedCommand(Command(org.eclipse.wst.server.stop,Stop,
+		Stop the server,
+		Category(org.eclipse.wst.server.ui,Server,Server,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@294aaa6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.serverViewScope,,,system)
